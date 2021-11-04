@@ -1,0 +1,1673 @@
+[
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "GOOG"
+                ],
+                "type": [
+                    "Stock"
+                ],
+                "limit": [
+                    "1"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "GOOG",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130001",
+                    "description": "Alphabet Inc",
+                    "listingMarket": "NASDAQ",
+                    "isQuotable": false,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AAPL"
+                ],
+                "type": [
+                    "Stock"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "+marketCapitalization"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AAPL",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130002",
+                    "description": "Apple Inc",
+                    "listingMarket": "NASDAQ",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AVSPY.IN",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130003",
+                    "description": "AAPL Alpha Index",
+                    "listingMarket": "NASDAQI",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787
+                    }
+                },
+                {
+                    "symbol": "NY2LAAPL.IN",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130004",
+                    "description": "ICE Leveraged 2x AAPL Index",
+                    "listingMarket": "NYSEGIF",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AAPL"
+                ],
+                "type": [
+                    "Stock"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "-marketCapitalization"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "NY2LAAPL.IN",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130005",
+                    "description": "ICE Leveraged 2x AAPL Index",
+                    "listingMarket": "NYSEGIF",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 11929277200
+                    }
+                },
+                {
+                    "symbol": "AVSPY.IN",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130006",
+                    "description": "AAPL Alpha Index",
+                    "listingMarket": "NASDAQI",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AAPL",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130007",
+                    "description": "Apple Inc",
+                    "listingMarket": "NASDAQ",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AAPL21Jan22P110.00"
+                ],
+                "type": [
+                    "Option"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "+marketCapitalization"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AAPL21Jan22P120.00",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130008",
+                    "description": "Apple Inc",
+                    "listingMarket": "OPRA",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 11929277870
+                    }
+                },
+                {
+                    "symbol": "AAPL21Jan22P110.00",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130009",
+                    "description": "AAPL Alpha Index",
+                    "listingMarket": "OPRA",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 119787200
+                    }
+                },
+                {
+                    "symbol": "AAPL21Jan22P130.00",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130010",
+                    "description": "ICE Leveraged 2x AAPL Index",
+                    "listingMarket": "OPRA",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 11929277870
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AA"
+                ],
+                "type": [
+                    "stock"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "+symbol"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AA",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130011",
+                    "description": "Alcoa Corporation",
+                    "listingMarket": "NYSE",
+                    "isQuotable": false,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AAALF",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130012",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AAALY",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130013",
+                    "description": "Aareal Bank AG",
+                    "isQuotable": true,
+                    "listingMarket": "PINX",
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AA"
+                ],
+                "type": [
+                    "Option"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "-stock"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AAALY",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130014",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 11929787200
+                    }
+                },
+                {
+                    "symbol": "AAALF",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130015",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 11929277872
+                    }
+                },
+                {
+                    "symbol": "AA",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130016",
+                    "description": "Alcoa Corporation",
+                    "listingMarket": "NYSE",
+                    "isQuotable": false,
+                    "stock": {
+                        "marketCapitalization": 11927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AA"
+                ],
+                "type": [
+                    "stock"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "+description"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AAALF",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130017",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AAALY",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130018",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AA",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130019",
+                    "description": "Alcoa Corporation",
+                    "listingMarket": "NYSE",
+                    "isQuotable": false,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "AA"
+                ],
+                "type": [
+                    "Option"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "sort-by": [
+                    "-stock"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "symbol": "AAALY",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130020",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AAALF",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130021",
+                    "description": "Aareal Bank AG",
+                    "listingMarket": "PINX",
+                    "isQuotable": true,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                },
+                {
+                    "symbol": "AA",
+                    "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130022",
+                    "description": "Alcoa Corporation",
+                    "listingMarket": "NYSE",
+                    "isQuotable": false,
+                    "stock": {
+                        "marketCapitalization": 1192927787200
+                    }
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/lookup",
+            "headers": {
+                "Authorization": [
+                    "Bearer testing-token"
+                ]
+            },
+            "queryStringParameters": {
+                "query": [
+                    "error-400"
+                ],
+                "limit": [
+                    "3"
+                ],
+                "type": [
+                    "Stock"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 400,
+            "body": {
+                "message": "Something is invalid",
+                "code": "string",
+                "timestamp": "2020-06-15T11:35:42.057Z"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/aapl"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130023",
+                "description": "Apple Inc",
+                "listingMarket": "NASDAQ",
+                "type": "Stock",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": true,
+                "industry": {
+                    "sector": "Technology",
+                    "group": "Consumer Electronics",
+                    "subGroup": "Consumer Electronics"
+                },
+                "previousClosePrice": 291.26,
+                "stock": {
+                    "averageVolatility20Days": 20.41330521,
+                    "averageVolatility3Months": 45611545,
+                    "outstandingShares": 4443265000,
+                    "earningsPerShare": 11.89,
+                    "priceEarningsRatio": 22.58032,
+                    "marketCapitalization": 1192927787200,
+                    "dividend": 0.77,
+                    "dividendYield": 1.1472,
+                    "exDividendDate": "2019-11-07",
+                    "dividendDate": "2019-11-14"
+                }
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AVSPY.IN"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AVSPY.IN",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130024",
+                "description": "AAPL Alpha Index",
+                "type": "Index",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "listingMarket": "NASDAQ Indexes",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 0
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/DN.DB.TO"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "DN.DB.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130025",
+                "description": "DELTA 9 CANNABIS INC 8.5 PCT DEBS",
+                "type": "Bond",
+                "currency": "CAD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "listingMarket": "TSX",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 62
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/DN.WT.A.TO"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "DN.WT.A.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130026",
+                "description": "DELTA 9 CANNABIS INC WTS A",
+                "type": "Right",
+                "currency": "CAD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "listingMarket": "TSX",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 0.06
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AAPL21Jan22C110.00"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL21JAN22C110.00",
+                "securityUuid": "53435254-0000-4001-0001-0000019f5d61",
+                "description": "APPLE INC",
+                "isQuotable": true,
+                "hasOptions": false,
+                "type": "Option",
+                "currency": "USD",
+                "isTradable": true,
+                "listingMarket": "OPRA",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 220.15,
+                "option": {
+                    "type": "Call",
+                    "strikePrice": 110,
+                    "expiryDate": "2020-08-14",
+                    "daysToExpiry": 4,
+                    "cashInLieu": 0,
+                    "style": "American",
+                    "openInterest": 407,
+                    "underlying": {
+                        "underlyingSymbol": "AAPL",
+                        "underlyingSecurityUuid": "53435254-0000-4001-0001-000000001f71",
+                        "multiplier": 100
+                    }
+                }
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AAPL21Jan22P110.00"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL21JAN22P110.00",
+                "securityUuid": "53435254-0000-4001-0001-0000019f5d66",
+                "description": "APPLE INC",
+                "isQuotable": true,
+                "hasOptions": false,
+                "type": "Option",
+                "currency": "USD",
+                "isTradable": true,
+                "listingMarket": "OPRA",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 1.85,
+                "option": {
+                    "type": "Put",
+                    "strikePrice": 110,
+                    "expiryDate": "2020-08-14",
+                    "daysToExpiry": 4,
+                    "cashInLieu": 0,
+                    "style": "American",
+                    "openInterest": 703,
+                    "underlying": {
+                        "underlyingSymbol": "AAPL",
+                        "underlyingSecurityUuid": "53435254-0000-4001-0001-000000001f71",
+                        "multiplier": 100
+                    }
+                }
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/8164570.90"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "8164570.90",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130029",
+                "description": "1 oz gold bar",
+                "type": "Gold",
+                "currency": "USD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "listingMarket": "NYSE",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 0
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/CIB476.TO"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "CIB476.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130030",
+                "description": "CIBC CANADIAN BOND FUND (476)",
+                "type": "MutualFund",
+                "currency": "CAD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "listingMarket": "TSX",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 14.692
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/csf"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "CSF",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130031",
+                "description": "SWISS FRANC",
+                "type": "Currency",
+                "currency": "USD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "listingMarket": "NASDAQ",
+                "industry": {
+                    "sector": "",
+                    "group": "",
+                    "subgroup": ""
+                },
+                "previousClosePrice": 0
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/error-400"
+        },
+        "httpResponse": {
+            "statusCode": 400,
+            "body": {
+                "message": "Something is invalid",
+                "code": "string",
+                "timestamp": "2020-06-15T11:35:42.057Z"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities",
+            "queryStringParameters": {
+                "uuids": [
+                    "53435254-0000-4001-0001-0000000000001ac0"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "securities": [
+                        {
+                            "symbol": "A",
+                            "securityUuid": "53435254-0000-4001-0001-0000000000001ac0",
+                            "description": "AGILENT TECHNOLOGIES INC",
+                            "type": "Stock",
+                            "currency": "USD",
+                            "isQuotable": true,
+                            "hasOptions": true,
+                            "listingMarket": "NYSE",
+                            "industry": {
+                                "sector": "Healthcare",
+                                "group": "Medical Diagnostics & Research",
+                                "subgroup": "Diagnostics & Research"
+                            },
+                            "previousClosePrice": 90.38,
+                            "stock": {
+                                "averageVolatility20Days": 2704672,
+                                "outstandingShares": 308777000,
+                                "earningsPerShare": 2.19,
+                                "dividend": 0.18,
+                                "dividendYield": 0.78999,
+                                "exDividendDate": "2020-07-20",
+                                "dividendDate": "2020-07-20"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities",
+            "queryStringParameters": {
+                "uuids": [
+                    "53435254-0000-4001-0001-0000000000001ac0"
+                ],
+                "symbols": [
+                    "A"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "securities": [
+                        {
+                            "symbol": "A",
+                            "securityUuid": "53435254-0000-4001-0001-000000001ac0",
+                            "description": "AGILENT TECHNOLOGIES INC",
+                            "isQuotable": true,
+                            "hasOptions": true,
+                            "type": "Stock",
+                            "currency": "USD",
+                            "isTradable": true,
+                            "listingMarket": "NYSE",
+                            "industry": {
+                                "sector": "Healthcare",
+                                "group": "Medical Diagnostics & Research",
+                                "subgroup": "Diagnostics & Research"
+                            },
+                            "previousClosePrice": 90.38,
+                            "stock": {
+                                "averageVolatility20Days": 2704672,
+                                "averageVolatility3Months": 2589304,
+                                "outstandingShares": 308777000,
+                                "earningsPerShare": 2.19,
+                                "priceEarningsRatio": 41.61644,
+                                "marketCapitalization": 28141971900,
+                                "dividend": 0.18,
+                                "dividendYield": 0.78999,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": "2020-08-14"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities",
+            "queryStringParameters": {
+                "uuids": [
+                    "53435254-0000-4001-0001-0000000000001ac2"
+                ],
+                "symbols": [
+                    "CNR.TO"
+                ],
+                "limit": [
+                    "2"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "securities": [
+                        {
+                            "symbol": "AEM",
+                            "securityUuid": "53435254-0000-4001-0001-000000001ac2",
+                            "description": "AGNICO EAGLE MINES LTD",
+                            "isQuotable": true,
+                            "hasOptions": false,
+                            "type": "Stock",
+                            "currency": "USD",
+                            "isTradable": true,
+                            "listingMarket": "NYSE",
+                            "industry": {
+                                "sector": "BasicMaterials",
+                                "group": "Metals & Mining",
+                                "subgroup": "Gold"
+                            },
+                            "previousClosePrice": 58.18,
+                            "stock": {
+                                "averageVolatility20Days": 1586040,
+                                "averageVolatility3Months": 2282037,
+                                "outstandingShares": 240332000,
+                                "earningsPerShare": 1.75,
+                                "priceEarningsRatio": 33.28571,
+                                "marketCapitalization": 13999367300,
+                                "dividend": 0.2,
+                                "dividendYield": 1.37339,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": "2020-08-14"
+                            }
+                        },
+                        {
+                            "symbol": "CNR.TO",
+                            "securityUuid": "53435254-0000-4001-0001-000000002f8f",
+                            "description": "CANADIAN NATIONAL RAILWAY CO.",
+                            "isQuotable": true,
+                            "hasOptions": false,
+                            "type": "Stock",
+                            "currency": "CAD",
+                            "isTradable": true,
+                            "listingMarket": "TSX",
+                            "industry": {
+                                "sector": "Industrials",
+                                "group": "Transportation",
+                                "subgroup": "Railroads"
+                            },
+                            "previousClosePrice": 122.28,
+                            "stock": {
+                                "averageVolatility20Days": 1165514,
+                                "averageVolatility3Months": 1658654,
+                                "outstandingShares": 709800000,
+                                "earningsPerShare": 6.19,
+                                "priceEarningsRatio": 19.42003,
+                                "marketCapitalization": 85325058000,
+                                "dividend": 0.575,
+                                "dividendYield": 1.91332,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": "2020-08-14"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities",
+            "queryStringParameters": {
+                "symbols": [
+                    "CNR.TO",
+                    "A",
+                    "GOOG"
+                ],
+                "limit": [
+                    "3"
+                ]
+            }
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": [
+                {
+                    "securities": [
+                        {
+                            "symbol": "CNR.TO",
+                            "securityUuid": "53435254-0000-4001-0001-000000002f8f",
+                            "description": "CANADIAN NATIONAL RAILWAY CO.",
+                            "isQuotable": true,
+                            "hasOptions": false,
+                            "type": "Stock",
+                            "currency": "CAD",
+                            "isTradable": true,
+                            "listingMarket": "TSX",
+                            "industry": {
+                                "sector": "Industrials",
+                                "group": "Transportation",
+                                "subgroup": "Railroads"
+                            },
+                            "previousClosePrice": 122.28,
+                            "stock": {
+                                "averageVolatility20Days": 1165514,
+                                "averageVolatility3Months": 1658654,
+                                "outstandingShares": 709800000,
+                                "earningsPerShare": 6.19,
+                                "priceEarningsRatio": 19.42003,
+                                "marketCapitalization": 85325058000,
+                                "dividend": 0.575,
+                                "dividendYield": 1.91332,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": "2020-08-14"
+                            }
+                        },
+                        {
+                            "symbol": "A",
+                            "securityUuid": "53435254-0000-4001-0001-000000001ac0",
+                            "description": "AGILENT TECHNOLOGIES INC",
+                            "isQuotable": true,
+                            "hasOptions": true,
+                            "type": "Stock",
+                            "currency": "USD",
+                            "isTradable": true,
+                            "listingMarket": "NYSE",
+                            "industry": {
+                                "sector": "Healthcare",
+                                "group": "Medical Diagnostics & Research",
+                                "subgroup": "Diagnostics & Research"
+                            },
+                            "previousClosePrice": 90.38,
+                            "stock": {
+                                "averageVolatility20Days": 2704672,
+                                "averageVolatility3Months": 2589304,
+                                "outstandingShares": 308777000,
+                                "earningsPerShare": 2.19,
+                                "priceEarningsRatio": 41.61644,
+                                "marketCapitalization": 28141971900,
+                                "dividend": 0.18,
+                                "dividendYield": 0.78999,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": "2020-08-14"
+                            }
+                        },
+                        {
+                            "symbol": "GOOG",
+                            "securityUuid": "53435254-0000-4001-0001-000000ae4075",
+                            "description": "ALPHABET INC",
+                            "isQuotable": true,
+                            "hasOptions": true,
+                            "type": "Stock",
+                            "currency": "USD",
+                            "isTradable": true,
+                            "listingMarket": "NASDAQ",
+                            "industry": {
+                                "sector": "CommunicationServices",
+                                "group": "Interactive Media",
+                                "subgroup": "Internet Content & Information"
+                            },
+                            "previousClosePrice": 1438.39,
+                            "stock": {
+                                "averageVolatility20Days": 1554095,
+                                "averageVolatility3Months": 2294053,
+                                "outstandingShares": 336162000,
+                                "earningsPerShare": 48.79,
+                                "priceEarningsRatio": 28.94405,
+                                "marketCapitalization": 474721645700,
+                                "dividend": 0.00275,
+                                "dividendYield": 0,
+                                "exDividendDate": "2020-08-14",
+                                "dividendDate": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/aapl/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130032",
+                "feedSymbol": "AAPL",
+                "listingMarketCode": "NASDAQ",
+                "type": "Stock",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": true,
+                "marketCode": "NASDAQ",
+                "marketSectorName": "NASDAQ"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/cnr.to/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "CNR.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130033",
+                "feedSymbol": "E:CNR",
+                "listingMarketCode": "TSX",
+                "type": "Stock",
+                "currency": "CAD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "TSX",
+                "marketSectorName": "TSX"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/8164570.90/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "8164570.90",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130034",
+                "feedSymbol": "",
+                "listingMarketCode": "NYSE",
+                "type": "Gold",
+                "currency": "USD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "marketCode": "NYSE",
+                "marketSectorName": "NYSE"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/CIB476.TO/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "CIB476.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130035",
+                "feedSymbol": "",
+                "listingMarketCode": "TSX",
+                "type": "MutualFund",
+                "currency": "CAD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "marketCode": "TSX",
+                "marketSectorName": "TSX"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/CSF/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "CSF",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130036",
+                "feedSymbol": "",
+                "listingMarketCode": "NASDAQ",
+                "type": "Currency",
+                "currency": "USD",
+                "isQuotable": false,
+                "hasOptions": false,
+                "marketCode": "NASDAQ",
+                "marketSectorName": "NASDAQ"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AAPL21Jan22C110.00/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL21JAN22C110.00",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130037",
+                "feedSymbol": "O:AAPL\\22A21\\110.0",
+                "listingMarketCode": "OPRA",
+                "type": "Option",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "CO",
+                "marketSectorName": "OPRA",
+                "option": {
+                    "type": "Call",
+                    "strikePrice": 110,
+                    "expiryDate": "2020-06-25",
+                    "underlyingSecurityUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                }
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AAPL21Jan22P110.00/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AAPL21JAN22P110.00",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130038",
+                "feedSymbol": "O:AAPL\\22M21\\110.0",
+                "listingMarketCode": "OPRA",
+                "type": "Option",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "CO",
+                "marketSectorName": "OPRA",
+                "option": {
+                    "type": "Put",
+                    "strikePrice": 110,
+                    "expiryDate": "2020-06-25",
+                    "underlyingSecurityUuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                }
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/AVSPY.IN/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "AVSPY.IN",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130039",
+                "feedSymbol": "I:AVSPY",
+                "listingMarketCode": "NASDAQI",
+                "type": "Index",
+                "currency": "USD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "NASDAQI",
+                "marketSectorName": "GIDS"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/DN.DB.TO/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "DN.DB.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130040",
+                "feedSymbol": "B:DN.DB",
+                "listingMarketCode": "TSX",
+                "type": "Bond",
+                "currency": "CAD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "TSX",
+                "marketSectorName": "GIDS"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/DN.WT.A.TO/internal"
+        },
+        "httpResponse": {
+            "statusCode": 200,
+            "body": {
+                "symbol": "DN.WT.A.TO",
+                "securityUuid": "de1a8c08-acb6-11ea-bb37-0242ac130041",
+                "feedSymbol": "W:DN.WT.A",
+                "listingMarketCode": "TSX",
+                "type": "Right",
+                "currency": "CAD",
+                "isQuotable": true,
+                "hasOptions": false,
+                "marketCode": "TSX",
+                "marketSectorName": "TSX"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    },
+    {
+        "priority": 0,
+        "httpRequest": {
+            "method": "GET",
+            "path": "/v1/securities/error-400/internal"
+        },
+        "httpResponse": {
+            "statusCode": 400,
+            "body": {
+                "message": "Something is invalid",
+                "code": "string",
+                "timestamp": "2020-04-02T20:46:33.828Z"
+            },
+            "delay": {
+                "timeUnit": "MILLISECONDS",
+                "value": 0
+            }
+        },
+        "times": {
+            "unlimited": true
+        },
+        "timeToLive": {
+            "unlimited": true
+        }
+    }
+]
